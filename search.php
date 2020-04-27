@@ -1,6 +1,5 @@
 <?php
 $paramsArray = (array) json_decode($_POST['data']);
-$valueRole = $_GET['size-field'];
 $getParams = 'q=';
 for ($i = 0; $i < count($paramsArray); $i++) {
     $operation =  ($paramsArray[$i]->operator == '=') ? '' : $paramsArray[$i]->operator;
